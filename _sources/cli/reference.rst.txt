@@ -133,7 +133,7 @@ contribution
 ............
 
 
-Get contributing scenes for a specific mosaic quad
+Get contributing scenes for a mosaic quad
 
 Usage: contribution [OPTIONS] NAME QUAD
 
@@ -173,10 +173,15 @@ Usage: download [OPTIONS] NAME
 
      - Format
 
-   * - rbox
+   * - bbox
      - Region to download as a comma-delimited string: lon_min,lat_min,lon_max,lat_max
 
-     - RBOX
+     - BBOX
+
+   * - rbox
+     - Alias for --bbox
+
+     - BBOX
 
    * - quiet
      - Disable ANSI control output
@@ -284,7 +289,7 @@ search
 ......
 
 
-None
+Get quad IDs and information for a mosaic
 
 Usage: search [OPTIONS] NAME
 
@@ -297,10 +302,15 @@ Usage: search [OPTIONS] NAME
 
      - Format
 
-   * - rbox
-     - Region to download as a comma-delimited string: lon_min,lat_min,lon_max,lat_max
+   * - bbox
+     - Region to query as a comma-delimited string: lon_min,lat_min,lon_max,lat_max
 
-     - RBOX
+     - BBOX
+
+   * - rbox
+     - Alias for --bbox
+
+     - BBOX
 
    * - limit
      - Limit the number of items.
